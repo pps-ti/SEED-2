@@ -1,0 +1,18 @@
+<table>
+    {% for mhs in data %}
+    Npm : {{ mhs['_id'] }}<br>
+    Nama : {{ mhs['Nama'] }}<br>
+    Jurusan : {{ mhs['Jurusan'] }}<br>
+    <a href="{{url_for('edit',npm=mhs['_id'])}}">Edit</a> | <a href="{{url_for('hapus',npm=mhs['_id'])}}">
+        Hapus</a><br><br>
+    {% endfor %}
+
+</table><br>
+
+Tambah Data Baru :<br> 
+<form method="POST">
+    Npm : <input name="Npm" type="text" required><br><br>
+    Nama : <input name="Nama" type="text" required><br><br>
+    Jurusan : <input name="Jurusan" type="text" required><br><br>
+    <input type="submit" value="Simpan">
+</form>
