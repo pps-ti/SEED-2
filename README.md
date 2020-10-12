@@ -28,6 +28,6 @@ python main.py
 ```
 
 <b>Tampilan Halaman</b><br><br>
-![permalink setting demo](https://ibb.co/kSTf4bm)
+![permalink setting demo](https://i.ibb.co/FD1M5ZH/Capture.jpg)
 Ketik <b>ctrl + c</b> pada terminal/CMD kalian jika ingin mematikan server flask'nya.<br><br>
 <b><u>PENTING!!!</u></b> : Karena memperhatikan faktor keamanan pada <i>cloud storage/database</i>, kami tidak mencantumkan <i>API keys</i> dari Firebase dan MongoDB serta akun yang digunakan untuk menggunakan flask mail. Jadi merupakan hal yang wajar apabila jika menjalankan program ini secara <i>default</i> setelah kalian melakukan <i>pull</i>/<i>clone</i> repositori ini akan terjadi kegagalan.
