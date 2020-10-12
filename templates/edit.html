@@ -1,8 +1,35 @@
-<form method="POST">
-    Npm : <input type="text" name="Npm" readonly value="{{data['_id']}}"><br><br>
-    Nama : <input type="text"  name="Nama" value="{{data['Nama']}}"><br><br>
-    Jurusan : <input type="text"  name="Jurusan" value="{{data['Jurusan']}}"><br><br>
-    <input type="submit" value="Simpan">
-</form><br> <br>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="stylesheet" href="{{ url_for('static',filename='main.css')}}">
+    </head>
+    <body>
+        <!--Edit Data-->
+        <form method="POST">
+            <div class="card">
+                <h3>Edit Data</h3>
+                <table>
+                    <tr>
+                        <th>NPM</th>
+                        <td><input type="text" name="NPM" readonly value="{{data['_id']}}"</td>
+                    </tr>
+                    <tr>
+                        <th>Nama</th>
+                        <td><input type="text" name="Nama" value="{{data['Nama']}}"</td>
+                    </tr>
+                    <tr>
+                        <th>Jurusan</th>
+                        <td><input type="text" name="Jurusan" value="{{data['Jurusan']}}"</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Simpan!"></td>
+                    </tr>
+                </table><br><br>
+                <a href="{{url_for('index')}}">Kembali</a>
+            </div>
+        </form>
 
-<a href="{{url_for('index')}}">Kembali</a>
+        
+    </body>
+</html>
